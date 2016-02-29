@@ -51,7 +51,9 @@ function TetrisPieceReverseL(){
 function TetrisPieceBlock(){
 	this.state = [ [1, 1],		// O O
 				   [1, 1] ];	// O O
-				   
+	
+	this.states = [this.state];
+	
 	this.currentState = 0;
 	this.color = 0; 
 	this.gridX = 4;
