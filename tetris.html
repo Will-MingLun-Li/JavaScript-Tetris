@@ -3,6 +3,11 @@
 <header>
 	<title> Tetris - JavaScript </title>
 	<link rel = "stylesheet" type = "text/css" href = "css/style.css">	
+	
+	<meta name = "viewport" content = "user-scalable = no, initial-scale = 0.5, maximum-scale = 1, user-scalable = 0" />
+	
+	<meta name = "apple-mobile-web-app-capable" content = "yes" />
+	<meta name = "apple-mobile-web-app-status-bar-style" content = "black-translucent" />
 </header>
 
 <body>
@@ -23,6 +28,7 @@
 		// Declaring some global variables that will be used for later
 		var rows = 20, column = 10, SIZE = 32;
 		var canvas, blockImage, backgroundImage, gameOverImage, currentPiece, context, gameData, imgLoader, prevTime, currentTime, isGameOver, lineSpan, currentLines;
+		var touchX, touchY, touchID;
 		
 		window.onload = onReady;
 		
