@@ -62,7 +62,7 @@ function TetrisPieceBlock(){
 
 // Line shaped piece 
 function TetrisPieceLine(){
-	this.state1 = [ [1], [1], [1], [1] ];  // O O O O
+	this.state1 = [ [1, 1, 1, 1] ];  // O O O O
 	
 	this.state2 = [ [1],	// O
 					[1],	// O
@@ -73,7 +73,7 @@ function TetrisPieceLine(){
 	this.currentState = 0;
 	
 	this.color = 0;
-	this.gridX = 5;
+	this.gridX = 3;
 	this.gridY = -4;
 }
 
