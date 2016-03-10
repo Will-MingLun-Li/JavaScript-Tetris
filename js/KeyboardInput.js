@@ -32,8 +32,9 @@ function getInput(e){
 					if (newState < 0)
 						newState = currentPiece.states.length - 1;
 						
-					if(checkMove(currentPiece.gridX, currentPiece.gridY, newState))
-						currentPiece.currentState = newState; 
+					if(checkMove(currentPiece.gridX, currentPiece.gridY, newState)){
+						currentPiece.currentState = newState; 				
+					}
 				}
 				break;
 				

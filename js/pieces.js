@@ -73,7 +73,7 @@ function TetrisPieceLine(){
 	this.currentState = 0;
 	
 	this.color = 0;
-	this.gridX = 3;
+	this.gridX = 4;
 	this.gridY = -4;
 }
 

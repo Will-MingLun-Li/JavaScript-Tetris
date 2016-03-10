@@ -16,6 +16,7 @@
 	</div>
 	
 	<div id = "score">
+		<p> Score: <span id = "scores"></span> </p>
 		<p> Lines Cleared: <span id = "lines"></span> </p>
 	</div>
 	
@@ -27,7 +28,7 @@
 	<script type = "text/javascript">
 		// Declaring some global variables that will be used for later
 		var rows = 20, column = 10, SIZE = 32;
-		var canvas, blockImage, backgroundImage, gameOverImage, currentPiece, context, gameData, imgLoader, prevTime, currentTime, isGameOver, lineSpan, currentLines;
+		var canvas, blockImage, backgroundImage, gameOverImage, currentPiece, context, gameData, imgLoader, prevTime, currentTime, isGameOver, lineSpan, currentLines, scores, scoreSpan;
 		var touchX, touchY, touchID;
 		
 		window.onload = onReady;
@@ -46,7 +47,9 @@
 			
 			canvas = document.getElementById("gameCanvas");
 			context = canvas.getContext("2d");
+			scoreSpan = document.getElementById("scores");
 			lineSpan = document.getElementById("lines");
+			
 			
 			// Set the game time to 0
 			prevTime = 0;
