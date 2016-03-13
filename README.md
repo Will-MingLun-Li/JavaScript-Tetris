@@ -4,4 +4,4 @@ One of the most classic games, Tetris, programmed in JavaScript and HTML5. You s
 
 All the images of this game was taken off the internet, I do not own any of those contents.
 
-The game is live [here](http://www.minglunli.com/)!
+The game is live [here](http://www.minglunli.com/tetris)!
